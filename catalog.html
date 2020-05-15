@@ -7,9 +7,12 @@
   </head>
   <body>
     <header>
+      <!-- Лого -->
       <a href="index.html">
         <img src="img/logo.svg" alt="">
       </a>
+
+      <!-- Поиск и состояние -->
       <img src="img/search.svg" alt="">
       <span>Поиск:</span>
       <img src="img/bookmarks.svg" alt="">
@@ -19,6 +22,7 @@
       <a href="">Оформить заказ</a>
       <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
 
+      <!-- Контакты -->
       <section>
         <span>+7 (812) 555-05-55</span>
         <p>
@@ -26,6 +30,7 @@
         </p>
       </section>
 
+      <!-- Личный кабинет -->
       <section>
           <span>Равшан Джамшутович</span>
           <button type="button">Выйти</button>
@@ -33,6 +38,7 @@
           <a href="sign-up.html">Личный кабинет</a>
       </section>
 
+      <!-- Навигация -->
       <nav>
         <ul>
           <li><a href="index.html">Главная</a></li>
@@ -48,7 +54,7 @@
     </header>
 
     <main>
-
+      <!-- Хлебные крошки -->
       <ul>
         <li><a href="index.html">Главная</a></li>
         <li><a href="catalog.html">Каталог</a></li>
@@ -56,28 +62,53 @@
         <li>Перфораторы</li>
       </ul>
 
+      <!-- Каталог -->
       <h1>Перфораторы</h1>
 
+      <!-- Фильтр -->
+      <h2>Фильтр:</h2>
       <section>
-        <h2>Производители:</h2>
-        <ul>
-          <li>BOSCH</li>
-          <li>ИНТЕРСКОЛ</li>
-          <li>MAKITA</li>
-          <li>DEWALT</li>
-          <li>HITACHI</li>
-        </ul>
+        <h2>Цена:</h2>
+        <input type="range" id="price" name="price"
+       min="0" max="30000" step="1000"><br>
+        <input type="text" name="" value="">
+        <span>-</span>
+        <input type="text" name="" value="">
+      </section>
+      <section>
+        <h2><b>Производители:</b></h2><br>
+        <input type="checkbox" id="bosch" name="brand" checked>
+        <label for="bosch">BOSCH</label>
+        <input type="checkbox" id="interscol" name="brand">
+        <label for="interscol">ИНТЕРСКОЛ</label>
+        <input type="checkbox" id="Makita" name="brand" checked>
+        <label for="Makita">Makita</label>
+        <input type="checkbox" id="dewalt" name="brand">
+        <label for="dewalt">DeWALT</label>
+        <input type="checkbox" id="hitachi" name="brand">
+        <label for="hitachi">HITACHI</label>
       </section>
 
       <section>
-        <h2>Питание:</h2>
-        <ul>
-          <li>АККУМУЛЯТОРНЫЕ</li>
-          <li>СЕТЕВЫЕ</li>
-        </ul>
+        <h2><b>Питание:</b></h2><br>
+         <input type="radio" name="accum" checked>Аккумуляторные<br>
+         <input type="radio" name="accum">Сетевые<br>
       </section>
       <button type="button" formaction="https://echo.htmlacademy.ru/">Показать</button>
 
+      <!-- Сортровка -->
+      <section>
+        <h2>Сортировка:</h2>
+        <ul>
+          <li><a href="">По цене</a></li>
+          <li><a href="">По типу</a></li>
+          <li><a href="">По функционалу</a></li>
+          <button type="button">Вверх</button>
+          <button type="button">Вниз</button>
+        </ul>
+      </section>
+
+      <!-- Товары -->
       <ul>
         <li>
           <article>
@@ -99,6 +130,7 @@
           <article>
             <img src="img/perf.svg" alt="">
             <h2>Перфоратор BOSCH BFG 2000</h2>
+            <span>NEW</span><br>
             <button type="button">Купить</button><br>
             <button type="button">В закладки</button><br>
             <span>12500 Р.</span>
@@ -108,6 +140,7 @@
           <article>
             <img src="img/perf.svg" alt="">
             <h2>Перфоратор BOSCH BFG 3000</h2>
+            <span>NEW</span><br>
             <span>22500 Р.</span><br>
             <span>15500 Р.</span>
           </article>
@@ -124,6 +157,7 @@
           <article>
             <img src="img/perf.svg" alt="">
             <h2>Перфоратор BOSCH BFG 2000</h2>
+            <span>NEW</span><br>
             <span>12500 Р.</span>
           </article>
         </li>
@@ -131,6 +165,7 @@
           <article>
             <img src="img/perf.svg" alt="">
             <h2>Перфоратор BOSCH BFG 3000</h2>
+            <span>NEW</span><br>
             <span>22500 Р.</span><br>
             <span>15500 Р.</span>
           </article>
@@ -147,17 +182,37 @@
           <article>
             <img src="img/perf.svg" alt="">
             <h2>Перфоратор BOSCH BFG 2000</h2>
+            <span>NEW</span><br>
             <span>12500 Р.</span>
           </article>
         </li>
       </ul>
+
+      <!-- Переход по страницам -->
+      <button type="button">1</button>
+      <button type="button">2</button>
+      <button type="button">3</button>
+      <button type="button">Следующая</button>
+
+      <!-- Просто независимая статья о перфораторах -->
+      <article>
+        <h2>Пара слов о перфораторах</h2>
+        <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и
+          долбления отверстий в кирпиче, бетоне и камне.<br> Существуют электромеханические и
+          пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта
+          и отбойного молотка.<br> В ассортиментном ряду есть выбор «трехрежимников»: в одном
+          устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+      </article>
+
     </main>
 
     <footer>
+      <!-- Лого -->
       <a href="index.html">
         <img src="img/logo.svg" alt="">
       </a>
 
+      <!-- Навигация -->
       <nav>
         <ul>
           <li><a href="index.html">Главная</a></li>
@@ -170,9 +225,11 @@
         </ul>
       </nav>
 
+      <!-- Контакты -->
       <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
          +7 (812) 555-05-55</p>
 
+      <!-- Разделы катлога -->
       <ul>
         <li><a href="">Материалы</a></li>
         <li><a href="">Техника</a></li>
@@ -180,7 +237,10 @@
         <li><a href="">Спецпредложения</a></li>
       </ul>
 
+      <!-- Copyright -->
       <p>© 2010–2019 Компания «Техномарт» Все права защищены</p>
+
+      <!-- Социальные сети -->
       <section>
         <ul>
           <li>
@@ -195,6 +255,7 @@
         </ul>
       </section>
 
+      <!-- Отдельные страницы -->
       <p>
         Обратная связь: <br>
         <a href="">mail@htmlacademy.ru</a>
