@@ -14,28 +14,35 @@
 
       <!-- Поиск и состояние -->
       <img src="img/search.svg" alt="">
-      <span>Поиск:</span>
+      <form>
+         <input type="search" name="search" placeholder="Поиск:">
+         <input type="submit" value="Найти">
+      </form>
       <img src="img/bookmarks.svg" alt="">
-      <span>Закладки:0</span>
+      <a href="">Закладки:0</a>
       <img src="img/basket.svg" alt="">
-      <span>Корзина:10</span>
+      <a href="">Корзина:10</a>
       <a href="">Оформить заказ</a>
+
       <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
 
       <!-- Контакты -->
       <section>
-        <span>+7 (812) 555-05-55</span>
-        <p>
-          Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-        </p>
+        <h2 hidden>Контакты</h2>
+        <adress>
+          <span>+7 (812) 555-05-55</span>
+          <p>
+            Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          </p>
+        </adress>
       </section>
 
       <!-- Личный кабинет -->
       <section>
-          <span>Равшан Джамшутович</span>
+          <h3>Равшан Джамшутович</h3>
           <button type="button">Выйти</button>
-          <a href="sign-up.html">Мои заказы</a>
-          <a href="sign-up.html">Личный кабинет</a>
+          <a href="">Мои заказы</a>
+          <a href="">Личный кабинет</a>
       </section>
 
       <!-- Навигация -->
@@ -66,46 +73,58 @@
       <h1>Перфораторы</h1>
 
       <!-- Фильтр -->
-      <h2>Фильтр:</h2>
-      <section>
-        <h2>Цена:</h2>
-        <input type="range" id="price" name="price"
-       min="0" max="30000" step="1000"><br>
-        <input type="text" name="" value="">
-        <span>-</span>
-        <input type="text" name="" value="">
-      </section>
-      <section>
-        <h2><b>Производители:</b></h2><br>
-        <input type="checkbox" id="bosch" name="brand" checked>
-        <label for="bosch">BOSCH</label>
-        <input type="checkbox" id="interscol" name="brand">
-        <label for="interscol">ИНТЕРСКОЛ</label>
-        <input type="checkbox" id="Makita" name="brand" checked>
-        <label for="Makita">Makita</label>
-        <input type="checkbox" id="dewalt" name="brand">
-        <label for="dewalt">DeWALT</label>
-        <input type="checkbox" id="hitachi" name="brand">
-        <label for="hitachi">HITACHI</label>
-      </section>
+      <aside>
+        <h2>Фильтр:</h2>
 
-      <section>
-        <h2><b>Питание:</b></h2><br>
-         <input type="radio" name="accum" checked>Аккумуляторные<br>
-         <input type="radio" name="accum">Сетевые<br>
-      </section>
-      <button type="button" formaction="https://echo.htmlacademy.ru/">Показать</button>
+        <section>
+          <form>
+            <h2><b>Цена:</b></h2>
+            <input type="range" id="priceRange" name="price"
+             min="0" max="30000" step="1000"><br>
+            <input type="text" id="minPrice" name="price" value="">
+            <span>-</span>
+            <input type="text" id="maxPrice" name="price" value="30000">
+          </form>
+        </section>
 
-      <!-- Сортровка -->
+        <section>
+          <form>
+            <h2><b>Производители:</b></h2>
+            <input type="checkbox" id="bosch" name="brand" checked>
+            <label for="bosch">BOSCH</label><br>
+            <input type="checkbox" id="interscol" name="brand">
+            <label for="interscol">ИНТЕРСКОЛ</label><br>
+            <input type="checkbox" id="Makita" name="brand" checked>
+            <label for="Makita">Makita</label><br>
+            <input type="checkbox" id="dewalt" name="brand">
+            <label for="dewalt">DeWALT</label><br>
+            <input type="checkbox" id="hitachi" name="brand">
+            <label for="hitachi">HITACHI</label>
+          </form>
+        </section>
+
+        <section>
+          <form>
+            <h2><b>Питание:</b></h2>
+            <input type="radio" id="rechargeable" name="nutrition" checked>
+            <label for="rechargeable">Аккумуляторные</label><br>
+            <input type="radio" id="network" name="nutrition">
+            <label for="network">Сетевые</label>
+           </form>
+        </section>
+
+        <button type="button">Показать</button>
+      </aside>
+      <!-- Сортировка -->
       <section>
         <h2>Сортировка:</h2>
         <ul>
           <li><a href="">По цене</a></li>
           <li><a href="">По типу</a></li>
           <li><a href="">По функционалу</a></li>
-          <button type="button">Вверх</button>
-          <button type="button">Вниз</button>
         </ul>
+        <button type="button">По убыванию</button>
+        <button type="button">По возрастанию</button>
       </section>
 
       <!-- Товары -->
@@ -189,10 +208,10 @@
       </ul>
 
       <!-- Переход по страницам -->
-      <button type="button">1</button>
-      <button type="button">2</button>
-      <button type="button">3</button>
-      <button type="button">Следующая</button>
+      <a href="">1</a>
+      <a href="">2</a>
+      <a href="">3</a>
+      <a href="">Следующая</a>
 
       <!-- Просто независимая статья о перфораторах -->
       <article>
@@ -226,8 +245,12 @@
       </nav>
 
       <!-- Контакты -->
-      <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
-         +7 (812) 555-05-55</p>
+      <address>
+        <p>
+          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+        </p>
+        <span>+7 (812) 555-05-55</span>
+      </address>
 
       <!-- Разделы катлога -->
       <ul>
@@ -242,15 +265,16 @@
 
       <!-- Социальные сети -->
       <section>
+        <h2 hidden>Социальные сети</h2>
         <ul>
           <li>
-            <a href="#">Вконтакте</a>
+            <a href="">Вконтакте</a>
           </li>
           <li>
-            <a href="#">Фейсбук</a>
+            <a href="">Фейсбук</a>
           </li>
           <li>
-            <a href="#">Инстаграм</a>
+            <a href="">Инстаграм</a>
           </li>
         </ul>
       </section>
@@ -258,7 +282,7 @@
       <!-- Отдельные страницы -->
       <p>
         Обратная связь: <br>
-        <a href="">mail@htmlacademy.ru</a>
+        <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
       </p>
 
       <p>
