@@ -2,25 +2,25 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="/css/master.css">
+    <link rel="stylesheet" type="text/css" href="css/master.css">
     <title>Каталог</title>
   </head>
   <body>
     <header>
       <!-- Лого -->
       <a href="index.html">
-        <img src="img/logo.svg" alt="">
+        <img src="img/logo-technomart.svg" alt="">
       </a>
 
       <!-- Поиск и состояние -->
-      <img src="img/search.svg" alt="">
+      <img src="img/icons/icon-search.svg" alt="">
       <form>
          <input type="search" name="search" placeholder="Поиск:">
          <input type="submit" value="Найти">
       </form>
-      <img src="img/bookmarks.svg" alt="">
+      <img src="img/icons/icon-bookmark.svg" alt="">
       <a href="">Закладки:0</a>
-      <img src="img/basket.svg" alt="">
+      <img src="img/icons/icon-cart.svg" alt="">
       <a href="">Корзина:10</a>
       <a href="">Оформить заказ</a>
 
@@ -29,6 +29,7 @@
       <!-- Контакты -->
       <section>
         <h2 hidden>Контакты</h2>
+        <img src="img/icons/icon-phone.svg" alt="">
         <adress>
           <span>+7 (812) 555-05-55</span>
           <p>
@@ -39,7 +40,9 @@
 
       <!-- Личный кабинет -->
       <section>
+          <img src="img/icons/icon-user.svg" alt="">
           <h3>Равшан Джамшутович</h3>
+          <img src="img/icons/icon-logout.svg" alt="">
           <button type="button">Выйти</button>
           <a href="">Мои заказы</a>
           <a href="">Личный кабинет</a>
@@ -63,9 +66,19 @@
     <main>
       <!-- Хлебные крошки -->
       <ul>
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="">Инструмент</a></li>
+        <li>
+          <img src="img/icons/icon-home.svg" alt="">
+          <img src="img/icons/icon-right-small.svg" alt="">
+          <a href="index.html">Главная</a>
+        </li>
+        <li>
+          <img src="img/icons/icon-right-small.svg" alt="">
+          <a href="catalog.html">Каталог</a>
+        </li>
+        <li>
+          <img src="img/icons/icon-right-small.svg" alt="">
+          <a href="">Инструмент</a>
+        </li>
         <li>Перфораторы</li>
       </ul>
 
@@ -90,14 +103,23 @@
         <section>
           <form>
             <h2><b>Производители:</b></h2>
+            <img src="img/icons/checkbox-on.svg" alt="">
             <input type="checkbox" id="bosch" name="brand" checked>
             <label for="bosch">BOSCH</label><br>
+
+            <img src="img/icons/checkbox-off.svg" alt="">
             <input type="checkbox" id="interscol" name="brand">
             <label for="interscol">ИНТЕРСКОЛ</label><br>
+
+            <img src="img/icons/checkbox-on.svg" alt="">
             <input type="checkbox" id="Makita" name="brand" checked>
             <label for="Makita">Makita</label><br>
+
+            <img src="img/icons/checkbox-off.svg" alt="">
             <input type="checkbox" id="dewalt" name="brand">
             <label for="dewalt">DeWALT</label><br>
+
+            <img src="img/icons/checkbox-off.svg" alt="">
             <input type="checkbox" id="hitachi" name="brand">
             <label for="hitachi">HITACHI</label>
           </form>
@@ -106,8 +128,11 @@
         <section>
           <form>
             <h2><b>Питание:</b></h2>
+            <img src="img/icons/radio-on.svg" alt="">
             <input type="radio" id="rechargeable" name="nutrition" checked>
             <label for="rechargeable">Аккумуляторные</label><br>
+
+            <img src="img/icons/radio-off.svg" alt="">
             <input type="radio" id="network" name="nutrition">
             <label for="network">Сетевые</label>
            </form>
@@ -226,9 +251,10 @@
     </main>
 
     <footer>
+
       <!-- Лого -->
       <a href="index.html">
-        <img src="img/logo.svg" alt="">
+        <img src="img/logo-technomart.svg" alt="">
       </a>
 
       <!-- Навигация -->
@@ -252,7 +278,7 @@
         <span>+7 (812) 555-05-55</span>
       </address>
 
-      <!-- Разделы катлога -->
+      <!-- Каталоги -->
       <ul>
         <li><a href="">Материалы</a></li>
         <li><a href="">Техника</a></li>
@@ -268,12 +294,15 @@
         <h2 hidden>Социальные сети</h2>
         <ul>
           <li>
+            <img src="img/icons/icon-vk.svg" alt="">
             <a href="">Вконтакте</a>
           </li>
           <li>
+            <img src="img/icons/icon-fb.svg" alt="">
             <a href="">Фейсбук</a>
           </li>
           <li>
+            <img src="img/icons/icon-insta.svg" alt="">
             <a href="">Инстаграм</a>
           </li>
         </ul>
