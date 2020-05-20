@@ -6,6 +6,7 @@
     <title>Каталог</title>
   </head>
   <body>
+
     <header>
       <!-- Лого -->
       <a href="index.html">
@@ -16,12 +17,16 @@
       <img src="img/icons/icon-search.svg" alt="">
       <form>
          <input type="search" name="search" placeholder="Поиск:">
-         <input type="submit" value="Найти">
+         <button type="button">Поиск</button>
       </form>
-      <img src="img/icons/icon-bookmark.svg" alt="">
-      <a href="">Закладки:0</a>
-      <img src="img/icons/icon-cart.svg" alt="">
-      <a href="">Корзина:10</a>
+      <a href="">
+        <img src="img/icons/icon-bookmark.svg" alt="">
+        <span>Закладки:0</span>
+      </a>
+      <a href="">
+        <img src="img/icons/icon-cart.svg" alt="">
+        <span>Корзина:10</span>
+      </a>
       <a href="">Оформить заказ</a>
 
       <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
@@ -29,9 +34,11 @@
       <!-- Контакты -->
       <section>
         <h2 hidden>Контакты</h2>
-        <img src="img/icons/icon-phone.svg" alt="">
         <adress>
-          <span>+7 (812) 555-05-55</span>
+          <a href="tel:+7 (812) 555-05-55">
+            <img src="img/icons/icon-phone.svg" alt="">
+            <span>+7 (812) 555-05-55</span>
+          </a>
           <p>
             Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           </p>
@@ -42,8 +49,10 @@
       <section>
           <img src="img/icons/icon-user.svg" alt="">
           <h3>Равшан Джамшутович</h3>
-          <img src="img/icons/icon-logout.svg" alt="">
-          <button type="button">Выйти</button>
+          <button type="button">
+            <img src="img/icons/icon-logout.svg" alt="">
+            <span>Выйти</span>
+          </button>
           <a href="">Мои заказы</a>
           <a href="">Личный кабинет</a>
       </section>
@@ -67,17 +76,23 @@
       <!-- Хлебные крошки -->
       <ul>
         <li>
-          <img src="img/icons/icon-home.svg" alt="">
-          <img src="img/icons/icon-right-small.svg" alt="">
-          <a href="index.html">Главная</a>
+          <a href="index.html">
+            <img src="img/icons/icon-home.svg" alt="">
+            <img src="img/icons/icon-right-small.svg" alt="">
+            <span>Главная</span>
+          </a>
         </li>
         <li>
-          <img src="img/icons/icon-right-small.svg" alt="">
-          <a href="catalog.html">Каталог</a>
+          <a href="catalog.html">
+            <img src="img/icons/icon-right-small.svg" alt="">
+            <span>Каталог</span>
+          </a>
         </li>
         <li>
-          <img src="img/icons/icon-right-small.svg" alt="">
-          <a href="">Инструмент</a>
+          <a href="">
+            <img src="img/icons/icon-right-small.svg" alt="">
+            <span>Инструмент</span>
+          </a>
         </li>
         <li>Перфораторы</li>
       </ul>
@@ -149,10 +164,14 @@
           <li><a href="">По типу</a></li>
           <li><a href="">По функционалу</a></li>
         </ul>
-        <img src="img/icons/icon-up-dir.svg" alt="">
-        <button type="button">По возрастанию</button>
-        <img src="img/icons/icon-down-dir.svg" alt="">
-        <button type="button">По убыванию</button>
+        <button type="button">
+          <img src="img/icons/icon-up-dir.svg" alt="">
+          <span>По возрастанию</span>
+        </button>
+        <button type="button">
+          <img src="img/icons/icon-down-dir.svg" alt="">
+          <span>По убыванию</span>
+        </button>
       </section>
 
       <!-- Товары -->
@@ -278,7 +297,9 @@
         <p>
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
         </p>
-        <span>+7 (812) 555-05-55</span>
+        <a href="tel:+7 (812) 555-05-55">
+          <span>+7 (812) 555-05-55</span>
+        </a>
       </address>
 
       <!-- Каталоги -->
@@ -297,16 +318,22 @@
         <h2 hidden>Социальные сети</h2>
         <ul>
           <li>
-            <img src="img/icons/icon-vk.svg" alt="">
-            <a href="">Вконтакте</a>
+            <a href="">
+              <img src="img/icons/icon-vk.svg" alt="">
+              <span>Вконтакте</span>
+            </a>
           </li>
           <li>
-            <img src="img/icons/icon-fb.svg" alt="">
-            <a href="">Фейсбук</a>
+            <a href="">
+              <img src="img/icons/icon-fb.svg" alt="">
+              <span>Фейсбук</span>
+            </a>
           </li>
           <li>
-            <img src="img/icons/icon-insta.svg" alt="">
-            <a href="">Инстаграм</a>
+            <a href="">
+              <img src="img/icons/icon-insta.svg" alt="">
+              <span>Инстаграм</span>
+            </a>
           </li>
         </ul>
       </section>
