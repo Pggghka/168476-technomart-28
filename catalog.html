@@ -111,58 +111,63 @@
 
         <section>
           <form action="https://echo.htmlacademy.ru" method="post">
-            <h2><b>Цена:</b></h2>
-            <img src="img/icons/filter-button.svg" alt="">
-            <input type="range" id="priceRange" name="range"
-             min="0" max="30000" step="1000"><br>
-            <input type="text" id="minPrice" name="minPrice" value="">
-            <span>-</span>
-            <input type="text" id="maxPrice" name="maxPrice" value="30000">
+            <fieldset>
+              <legend>Цена:</legend>
+              <img src="img/icons/filter-button.svg" alt="">
+              <input type="range" id="priceRange" name="range"
+               min="0" max="30000" step="1000"><br>
+              <input type="text" id="minPrice" name="minPrice" value="">
+              <span>-</span>
+              <input type="text" id="maxPrice" name="maxPrice" value="30000">
+            </fieldset>
 
-            <h2><b>Производители:</b></h2>
-            <input type="checkbox" id="bosch" name="brand" checked>
-            <label for="bosch">
-              <img src="img/icons/checkbox-on.svg" alt="">
-              <span>BOSCH</span>
-            </label><br>
+            <fieldset>
+              <legend>Производители:</legend>
+              <input type="checkbox" id="bosch" name="brand" checked>
+              <label for="bosch">
+                <img src="img/icons/checkbox-on.svg" alt="">
+                <span>BOSCH</span>
+              </label><br>
 
-            <input type="checkbox" id="interscol" name="brand">
-            <label for="interscol">
-              <img src="img/icons/checkbox-off.svg" alt="">
-              <span>ИНТЕРСКОЛ</span>
-            </label><br>
+              <input type="checkbox" id="interscol" name="brand">
+              <label for="interscol">
+                <img src="img/icons/checkbox-off.svg" alt="">
+                <span>ИНТЕРСКОЛ</span>
+              </label><br>
 
-            <input type="checkbox" id="Makita" name="brand" checked>
-            <label for="Makita">
-              <img src="img/icons/checkbox-on.svg" alt="">
-              <span>Makita</span>
-            </label><br>
+              <input type="checkbox" id="Makita" name="brand" checked>
+              <label for="Makita">
+                <img src="img/icons/checkbox-on.svg" alt="">
+                <span>Makita</span>
+              </label><br>
 
-            <input type="checkbox" id="dewalt" name="brand">
-            <label for="dewalt">
-              <img src="img/icons/checkbox-off.svg" alt="">
-              <span>DeWALT</span>
-            </label><br>
+              <input type="checkbox" id="dewalt" name="brand">
+              <label for="dewalt">
+                <img src="img/icons/checkbox-off.svg" alt="">
+                <span>DeWALT</span>
+              </label><br>
 
-            <input type="checkbox" id="hitachi" name="brand">
-            <label for="hitachi">
-              <img src="img/icons/checkbox-off.svg" alt="">
-              <span>HITACHI</span>
-            </label>
+              <input type="checkbox" id="hitachi" name="brand">
+              <label for="hitachi">
+                <img src="img/icons/checkbox-off.svg" alt="">
+                <span>HITACHI</span>
+              </label>
+            </fieldset>
 
-            <h2><b>Питание:</b></h2>
-            <input type="radio" id="rechargeable" name="nutrition" checked>
-            <label for="rechargeable">
-              <img src="img/icons/radio-on.svg" alt="">
-              <span>Аккумуляторные</span>
-            </label><br>
+            <fieldset>
+              <legend>Питание:</legend>
+              <input type="radio" id="rechargeable" name="nutrition" checked>
+              <label for="rechargeable">
+                <img src="img/icons/radio-on.svg" alt="">
+                <span>Аккумуляторные</span>
+              </label><br>
 
-
-            <input type="radio" id="network" name="nutrition">
-            <label for="network">
-              <img src="img/icons/radio-off.svg" alt="">
-              <span>Сетевые</span>
-            </label>
+              <input type="radio" id="network" name="nutrition">
+              <label for="network">
+                <img src="img/icons/radio-off.svg" alt="">
+                <span>Сетевые</span>
+              </label>
+            </fieldset>            
 
             <button type="submit">Показать</button>
            </form>
