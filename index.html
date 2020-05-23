@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -10,21 +12,22 @@
     <header>
       <!-- Лого -->
       <a href="index.html">
-        <img src="img/logo-technomart.svg" width="108" height="18" alt="Техномарт">
+        <img src="img/logo-technomart.svg" width="108" height="18" alt="Перейти на главную">
       </a>
 
       <!-- Поиск и состояние -->
       <img src="img/icons/icon-search.svg" alt="">
-      <form>
-         <input type="search" name="search" placeholder="Поиск:">
-         <button type="button">Поиск</button>
+      <form action="https://echo.htmlacademy.ru" method="post">
+         <label for="search-serch">Поиск:</label>
+         <input type="search" name="search" id="search-serch" placeholder="Поиск:">
+         <button type="submit">Поиск</button>
       </form>
       <a href="">
-        <img src="img/icons/icon-bookmark.svg" alt="">
+        <img src="img/icons/icon-bookmark.svg" alt="Закладки">
         <span>Закладки:0</span>
       </a>
       <a href="">
-        <img src="img/icons/icon-cart.svg" alt="">
+        <img src="img/icons/icon-cart.svg" alt="Корзина">
         <span>Корзина:0</span>
       </a>
       <a href="">Оформить заказ</a>
@@ -36,9 +39,8 @@
       </h1>
 
       <!-- Контакты -->
-      <section>
-        <h2 hidden>Контакты</h2>
-        <adress>
+        <h2 class="visually-hidden">Контакты</h2>
+        <address>
           <a href="tel:+7(812)555-05-55">
             <img src="img/icons/icon-phone.svg" alt="">
             <span>+7 (812) 555-05-55</span>
@@ -46,12 +48,11 @@
           <p>
             Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           </p>
-        </adress>
-      </section>
+        </address>
 
       <!-- Личный кабинет -->
       <section>
-        <h2 hidden>Личныый кабинет</h2>
+        <h2 class="visually-hidden">Личныый кабинет</h2>
         <a href="">
           <img src="img/icons/icon-login.svg" alt="">
           <span>Войти</span>
@@ -81,21 +82,21 @@
         <h2>Материалы</h2>
         <span>NEW</span><br>
         <a href="">
-          <img src="img/slider/materials_slider.svg" alt="">
+          <img src="img/slider/materials_slider.svg" alt="Материалы">
           <span>на любой вкус</span>
         </a>
       </article>
       <article>
         <h2>Инструмент</h2>
         <a href="">
-          <img src="img/slider/tool_slider.svg" alt="">
+          <img src="img/slider/tool_slider.svg" alt="Инструмент">
           <span>на все случаи</span>
         </a>
       </article>
       <article>
         <h2>Техника</h2>
         <a href="">
-          <img src="img/slider/technique_slider.svg" alt="">
+          <img src="img/slider/technique_slider.svg" alt="Техника">
           <span>для стройки</span>
         </a>
       </article>
@@ -104,26 +105,26 @@
         <p>Настоящие мужские игрушки</p>
         <img src="img/perfMen.svg" alt="">
         <button type="button">
-          <img src="img/icons/icon-left.svg" alt="">
-          <span>Назад</span>
+          <img src="img/icons/icon-left.svg" alt="Предыдущая картинка">
+          <span class="visually-hidden">Предыдущая картинка</span>
         </button>
         <button type="button">
-          <img src="img/icons/icon-right.svg" alt="">
-          <span>Вперед</span>
+          <img src="img/icons/icon-right.svg" alt="Следующая картинка">
+          <span class="visually-hidden">Следующая картинка</span>
         </button>
         <a href="catalog.html">Открыть каталог</a>
       </article>
       <article>
         <h2>Скидки 50%</h2>
         <a href="">
-          <img src="img/slider/sales.svg" alt="">
+          <img src="img/slider/sales.svg" alt="Скидки 50%">
           <span>на 350 товаров</span>
         </a>
       </article>
       <article>
         <h2>Доставка</h2>
         <a href="">
-          <img src="img/slider/delivery_slider.svg" alt="">
+          <img src="img/slider/delivery_slider.svg" alt="Доставка">
           <span>бесплатно</span>
         </a>
       </article>
@@ -137,7 +138,7 @@
           <li>
             <article>
               <a href="">
-                <img src="img/perf.svg" alt="">
+                <img src="img/perf.svg" alt="Перфоратор BOSCH BFG 9000">
                 <h2>Перфоратор BOSCH BFG 9000</h2>
               </a>
               <del>32500 Р.</del><br>
@@ -147,7 +148,7 @@
           <li>
             <article>
               <a href="">
-                <img src="img/perf.svg" alt="">
+                <img src="img/perf.svg" alt="Перфоратор BOSCH BFG 3000">
                 <h2>Перфоратор BOSCH BFG 3000</h2>
               </a>
               <span>NEW</span><br>
@@ -158,7 +159,7 @@
           <li>
             <article>
               <a href="">
-                <img src="img/perf.svg" alt="">
+                <img src="img/perf.svg" alt="Перфоратор BOSCH BFG 6000">
                 <h2>Перфоратор BOSCH BFG 6000</h2>
               </a>
               <del>30500 Р.</del><br>
@@ -168,7 +169,7 @@
           <li>
             <article>
               <a href="">
-                <img src="img/perf.svg" alt="">
+                <img src="img/perf.svg" alt="Перфоратор BOSCH BFG 2000">
                 <h2>Перфоратор BOSCH BFG 2000</h2>
               </a>
               <span>NEW</span><br>
@@ -216,7 +217,7 @@
             Дом уж восстановите как-нибудь сами.</p>
       </section>
 
-      <img src="img/services/guarantee.png" alt="">
+      <img src="img/services/guarantee.png" alt="Гарантия">
 
       <!-- Мини-блок "О компании" -->
       <section>
@@ -241,7 +242,7 @@
         <p>Вы можете забрать товар сами,<br>
         заехав в наш офис:</p>
         <a href="">
-          <img src="img/map.png" alt=""><br>
+          <img src="img/map.png" alt="Карта проезда"><br>
           <span>Заблудились? Напишите нам!</span>
         </a>
       </section>
@@ -252,7 +253,7 @@
 
       <!-- Лого -->
       <a href="index.html">
-        <img src="img/logo-technomart.svg" width="108" height="18" alt="Техномарт">
+        <img src="img/logo-technomart.svg" width="108" height="18" alt="Перейти на главную">
       </a>
 
       <!-- Навигация -->
@@ -291,24 +292,24 @@
 
       <!-- Социальные сети -->
       <section>
-        <h2 hidden>Социальные сети</h2>
+        <h2 class="visually-hidden">Социальные сети</h2>
         <ul>
           <li>
             <a href="">
-              <img src="img/icons/icon-vk.svg" alt="">
-              <span>Вконтакте</span>
+              <img src="img/icons/icon-vk.svg" alt="Вконтакте">
+              <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
           <li>
             <a href="">
-              <img src="img/icons/icon-fb.svg" alt="">
-              <span>Фейсбук</span>
+              <img src="img/icons/icon-fb.svg" alt="Фейсбук">
+              <span class="visually-hidden">Фейсбук</span>
             </a>
           </li>
           <li>
             <a href="">
-              <img src="img/icons/icon-insta.svg" alt="">
-              <span>Инстаграм</span>
+              <img src="img/icons/icon-insta.svg" alt="Инстаграм">
+              <span class="visually-hidden">Инстаграм</span>
             </a>
           </li>
         </ul>
@@ -326,5 +327,35 @@
       </p>
 
     </footer>
+
+    <!-- POP-UP окна -->
+
+    <section>
+      <h2>Напишите нам</h2>
+      <button type="button">
+        <img src="./img/icons/close-form.svg" alt="Закрыть форму">
+      </button>
+      <br>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <label for="FI">Ваше имя:</label>
+        <input type="text" name="FI" id="FI" placeholder="Имя Фамилия">
+        <label for="mail">Ваш e-mail:</label>
+        <input type="email" name="mail" id="mail" placeholder="email@example.com">
+        <br>
+        <label for="appeal">Текст письма:</label><br>
+        <input type="" name="appeal" id="appeal" placeholder="В свободной форме">
+        <br>
+        <button type="submit">Оформить заказ</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Карта</h2>
+      <button type="button">
+        <img src="./img/icons/close-form.svg" alt="Закрыть форму">
+      </button>
+      <br>
+      <img src="./img/big-map.png" alt="Карта проезда">
+    </section>
   </body>
 </html>
