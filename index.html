@@ -101,20 +101,30 @@
           <span>для стройки</span>
         </a>
       </article>
-      <article>
-        <h2>Перфораторы</h2>
-        <p>Настоящие мужские игрушки</p>
-        <img src="img/perfMen.svg" alt="">
-        <button type="button">
+
+      <div class="slider_wrapper">
+        <article class="slider_item slider_item_1">
+          <h2>Перфораторы</h2>
+          <p>Настоящие мужские игрушки</p>
+          <img src="./img/slider/panchers_slider.jpg" alt="">
+          <a href="catalog.html">Открыть каталог</a>
+        </article>
+
+        <article class="slider_item slider_item_2">
+          <h2>Дрели</h2>
+          <p>Соседям на радость!</p>
+          <img src="./img/slider/drills_slider.jpg" alt="">
+          <a href="catalog.html">Открыть каталог</a>
+        </article>
+
+        <button type="button" class="slider_button slider_button_previous">
           <img src="img/icons/icon-left.svg" alt="Предыдущая картинка">
-          <span class="visually-hidden">Предыдущая картинка</span>
         </button>
-        <button type="button">
+        <button type="button" class="slider_button slider_button_next">
           <img src="img/icons/icon-right.svg" alt="Следующая картинка">
-          <span class="visually-hidden">Следующая картинка</span>
         </button>
-        <a href="catalog.html">Открыть каталог</a>
-      </article>
+      </div>
+
       <article>
         <h2>Скидки 50%</h2>
         <a href="">
@@ -137,45 +147,37 @@
 
         <ul>
           <li>
-            <article>
-              <a href="">
-                <img src="img/perf.svg" alt="Перфоратор BOSCH BFG 9000">
-                <h2>Перфоратор BOSCH BFG 9000</h2>
-              </a>
-              <del>32500 Р.</del><br>
+            <a href="">
+              <img src="./img/punchers/BFG_9000.png" alt="Перфоратор BOSCH BFG 9000">
+              <h2>Перфоратор BOSCH BFG 9000</h2>
+              <del>32500a href="" Р.</del><br>
               <span>25500 Р.</span>
-            </article>
+            </a>
           </li>
           <li>
-            <article>
-              <a href="">
-                <img src="img/perf.svg" alt="Перфоратор BOSCH BFG 3000">
-                <h2>Перфоратор BOSCH BFG 3000</h2>
-              </a>
+            <a href="">
+              <img src="./img/punchers/BFG_3000.png" alt="Перфоратор BOSCH BFG 3000">
+              <h2>Перфоратор BOSCH BFG 3000</h2>
               <span>NEW</span><br>
               <del>22500 Р.</del><br>
               <span>15500 Р.</span>
-            </article>
+            </a>
           </li>
           <li>
-            <article>
-              <a href="">
-                <img src="img/perf.svg" alt="Перфоратор BOSCH BFG 6000">
-                <h2>Перфоратор BOSCH BFG 6000</h2>
-              </a>
+            <a href="">
+              <img src="./img/punchers/BFG_6000.png" alt="Перфоратор BOSCH BFG 6000">
+              <h2>Перфоратор BOSCH BFG 6000</h2>
               <del>30500 Р.</del><br>
               <span>25500 Р.</span>
-            </article>
+            </a>
           </li>
           <li>
-            <article>
-              <a href="">
-                <img src="img/perf.svg" alt="Перфоратор BOSCH BFG 2000">
-                <h2>Перфоратор BOSCH BFG 2000</h2>
-              </a>
+            <a href="">
+              <img src="./img/punchers/BFG_2000.png" alt="Перфоратор BOSCH BFG 2000">
+              <h2>Перфоратор BOSCH BFG 2000</h2>
               <span>NEW</span><br>
               <span>12500 Р.</span>
-            </article>
+            </a>
           </li>
         </ul>
       </section>
@@ -210,15 +212,32 @@
       </section>
 
       <section>
-        <h2>Гарантия</h2>
-        <p>Если купленный у нас товар поломается или заискрит,<br>
-            а также в случае пожара, спровоцированного его <br>
-           возгоранием,  вы всегда можете быть уверены в нашей <br>
-           гарантии. Мы обменяем сгоревший товар на новый. <br>
-            Дом уж восстановите как-нибудь сами.</p>
+        <h2>Доставка</h2>
+        <p>Мы с удовольствием доставим ваш товар прямо<br>
+            к вашему подъезду совершенно бесплатно!<br>
+            Ведь мы неплохо заработаем,<br>
+            поднимая его на ваш этаж!</p>
+        <img src="./img/services/delivery.png" alt="Доставка">
       </section>
 
-      <img src="img/services/guarantee.png" alt="Гарантия">
+      <section>
+        <h2>Гарантия</h2>
+        <p>Если купленный у нас товар поломается или заискрит,<br>
+            а также в случае пожара, спровоцированного его<br>
+           возгоранием,  вы всегда можете быть уверены в нашей<br>
+           гарантии. Мы обменяем сгоревший товар на новый.<br>
+            Дом уж восстановите как-нибудь сами.</p>
+        <img src="img/services/guarantee.png" alt="Гарантия">
+      </section>
+
+      <section>
+        <h2>Кредит</h2>
+        <p>Залезть в долговую яму стало проще!<br>
+             Кредитные консультанты придут вам на помощь.</p>
+        <button type="button">Отправить заявку</button>
+        <img src="./img/services/credit.png" alt="Кредит">
+      </section>
+
 
       <!-- Мини-блок "О компании" -->
       <section>
