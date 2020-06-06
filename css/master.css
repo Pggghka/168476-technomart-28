@@ -1,4 +1,6 @@
+
 /* Fonts */
+
 @font-face {
 font-family: "Cuprum"; src:
   url("../fonts/cuprum.woff2") format("woff2"),
@@ -47,14 +49,44 @@ font-family: "PT Sans"; src:
   font-style: normal;
 }
 
-/* Styles */
-body {
-  background-color: black;
-  color: white;
-  font-family: 'PT Sans', sans-serif;
-  font-weight: bold;
+/* MAIN Styles */
+
+:root {
+  --red: #EE3643;
+  --green: #63A63E;
+  --grey: #3D546F;
+  --greyLight: #C5C5C5;
+  --background: #F1F5F7;
+  --white: #FFFFFF;
+  --yellow: #FFBF47;
+  --deletedPrice: #A9A9A9;
+  --blue: #3BBCE3;
+  --lilac: #DC91D8;
+  --greenLight: #8ED78F;
+  --yellowLight: #FFD180;
+  --success: #5FBB2D;
+  --warning: #FFBF47;
+  --error: #BA2732;
+  --black: #000000;
 }
 
+body {
+  background-color: var(--white);
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+li {
+  list-style: none;
+}
+ul {
+ margin-left: 0; /* Отступ слева в браузере IE и Opera */
+ padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
 form{
   display: inline-block;
 }
@@ -68,4 +100,363 @@ form{
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.redHref {
+  background-color: var(--red);
+  text-align: center;
+  color: var(--white);
+}
+
+.sampleText {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--black);
+}
+
+.topic {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425C;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.paragraph2 {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.paragraph3 {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--white);
+}
+
+.paragraph4{
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.paragraph5 {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.paragraph6 {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.filter input[type='text'] {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.priceFilter span {
+  color: var(--black);
+}
+
+/* Header */
+
+header {
+  background-color: var(--background);
+}
+
+.heading {
+  color: var(--red);
+  font-family: Cuprum;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+/* Contacts */
+.contacts .phone {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+}
+
+.contacts a {
+  color: var(--red);
+}
+
+.contacts a:visited{
+  color: var(--red);
+}
+
+.contacts .address {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425C;
+}
+
+/* Private Office */
+
+.privateOffice {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.cabinet {
+  background-color: var(--white);
+}
+
+.cabinet h3{
+  color: var(--black)
+}
+
+.userInfo a {
+  color: #32425C;
+}
+
+.userInfo .circle{
+  background-color: #32425C;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+}
+
+/* Navigation */
+
+.menuListItem a{
+  color: var(--white);
+}
+
+/* Breadcrumbs */
+
+.breadcrumb {
+  display: inline-block;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--black)
+}
+
+/* Offers */
+
+.offer {
+  width: 300px;
+  height: 123px;
+}
+
+.materialsOffer{
+  background-color: var(--yellow);
+}
+
+.instrumentalOffer{
+  background-color: var(--blue);
+}
+
+.techniqueOffer {
+  background-color: var(--lilac);
+}
+
+.salesOffer {
+  background-color: var(--greenLight);
+}
+
+.deliveryOffer {
+  background-color: #FFC047;
+}
+
+.offer h2{
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--white);
+}
+
+.offer span {
+  color: var(--white);
+}
+
+.slider_wrapper {
+  color: var(--white);
+}
+
+.slider_item h2{
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  color: var(--white);
+}
+
+.slider_item p {
+  color: var(--white);
+}
+
+/* Popular goods */
+
+.catalogItem {
+  width: 220px;
+  height: 318px;
+  border: 1px solid #EAEAEA;
+  text-align: center;
+  display: inline-block;
+}
+
+.catalogItem h2 {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  color: var(--black);
+}
+
+.catalogItem del {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  text-decoration-line: line-through;
+  text-transform: uppercase;
+  color: var(--deletedPrice);
+}
+
+.catalogItem .price {
+  width: 141px !important;
+  height: 38px;
+  background-color: var(--red);
+  color: var(--white);
+  text-align: center;
+  border-radius: 5px;
+  margin: 0 auto;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 38px;
+  text-transform: uppercase;
+}
+
+/* Popular manufacturers */
+
+.brand {
+  display: inline-block;
+  width: 220px;
+  height: 145px;
+  border: 1px solid #EAEAEA;
+  text-align: center;
+}
+
+/* Services */
+
+.services {
+  background-color: var(--background);
+}
+
+.servicesText {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+  color: #32425C;
+}
+
+/* Company */
+
+.transportCompany{
+  color: var(--black);
+}
+
+/* Footer */
+
+footer {
+  background-color: #32425C;
+}
+
+.footerAbout {
+  background-color: #293449;
+}
+
+
+.footerNavigationItem a {
+  color: var(--background);
+}
+
+.footerContats {
+  color: #F3F7F9;
+}
+
+.footerContats .phone {
+  color: #F3F7F9;
+}
+
+.additionalNavigationItem a{
+  color: var(--yellowLight);
+}
+
+
+.socialMedia {
+  text-align: center;
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #212A3A;
+  line-height: 44px;
+}
+
+.more a {
+  color: var(--yellowLight);
 }
