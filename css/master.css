@@ -196,11 +196,118 @@ form{
   color: var(--black);
 }
 
+.content {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Header */
 
 header {
   background-color: var(--background);
 }
+
+.headerMainButtons{
+  width: 100%;
+  height: 42px;
+  background-color: #293449;
+}
+
+.header-main-content{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--white) !important;
+}
+
+.header-logo{
+  width: 220px;
+  height: 42px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  background-color: var(--red);
+  position: relative;
+}
+
+.header-logo::before {
+  position: absolute;
+  top: 42px;
+  content: "";
+  height: 5px;
+  width:inherit;
+  background-color: var(--red);
+  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+}
+
+.header-main-content .search{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 42px;
+  width: 270px;
+  margin-right: -1px;
+}
+
+.header-main-content .search svg{
+  margin-right: 8px;
+  margin-left: 17px;
+}
+
+.header-main-content .search input{
+  background-color: transparent;
+  border: none;
+  width: 200px;
+  padding: 0;
+  color: var(--white);
+}
+
+.header-main-content .search input::placeholder { /* Firefox, Chrome, Opera */
+    color: var(--white);
+}
+
+
+.header-main-content .bookmark{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 150px;
+  height: 42px;
+  color: var(--white);
+}
+
+.header-main-content .bookmark svg{
+  margin-left: 20px;
+  margin-right: 9px;
+}
+
+.header-main-content .cart{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 150px;
+  height: 42px;
+  color: var(--white);
+}
+
+.header-main-content .cart svg{
+  margin-left: 20px;
+  margin-right: 9px;
+}
+
+.header-main-content .addToCart{
+  width:150px;
+  height: 42px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--green);
+  color: var(--white);
+}
+
+
 
 .heading {
   color: var(--red);
@@ -236,6 +343,8 @@ header {
   line-height: 24px;
   color: #32425C;
 }
+
+
 
 /* Private Office */
 
