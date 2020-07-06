@@ -636,18 +636,18 @@ form{
   margin-right: 19px;
 }
 
-.popularGoods .redHref{
+.title .redHref{
   width: 192px;
 }
 
 .catalog{
   display: flex;
+  margin-bottom: 67px;
 }
 
 .catalogItem {
   display: flex;
   border: 1px solid #EAEAEA;
-
   margin-right: 20px;
 }
 
@@ -733,28 +733,75 @@ form{
 }
 
 /* Popular manufacturers */
+.populalManufacturer{
+  margin-bottom: 70px;
+}
+.brands{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
 .brand {
-  display: inline-block;
-  width: 220px;
-  height: 145px;
+  display: flex;
+  width: 218px;
+  height: 143px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #EAEAEA;
   text-align: center;
+}
+
+.noMargin{
+  margin-right: 0px;
 }
 
 /* Services */
 
 .services {
   background-color: var(--background);
+  display: flex;
+}
+
+.serviceTopic{
+  margin-top: 64px;
+  margin-bottom: 25px;
 }
 
 .servicesText {
+  display: flex;
+  align-items: center;
+  margin-top: 1px;
+  width: 218px;
+  height: 61px;
+  padding-left: 22px;
+  background-color: #32425C;
   font-family: Cuprum;
   font-style: normal;
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
-  color: #32425C;
+  color: var(--white);
+  box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
+}
+
+.servicesText:hover{
+  background-color: #293449;
+}
+
+.listServisces .active{
+  background-color: var(--white);
+  color:  #32425C;
+  box-shadow: none;
+}
+
+
+.listServisces::after{
+  content: url(/img/;
+  position: absolute;
+  left: 80px;
 }
 
 /* Company */
